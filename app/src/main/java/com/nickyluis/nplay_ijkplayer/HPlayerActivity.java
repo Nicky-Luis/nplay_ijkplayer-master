@@ -1,4 +1,4 @@
-package com.dou361.jjdxm_ijkplayer;
+package com.nickyluis.nplay_ijkplayer;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
@@ -13,11 +13,11 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.dou361.ijkplayer.bean.VideoijkBean;
-import com.dou361.ijkplayer.listener.OnShowThumbnailListener;
-import com.dou361.ijkplayer.widget.PlayStateParams;
-import com.dou361.ijkplayer.widget.PlayerView;
-import com.dou361.jjdxm_ijkplayer.utlis.MediaUtils;
+import com.nickyluis.ijkplayer.bean.VideoijkBean;
+import com.nickyluis.ijkplayer.listener.OnShowThumbnailListener;
+import com.nickyluis.ijkplayer.widget.PlayStateParams;
+import com.nickyluis.ijkplayer.widget.PlayerView;
+import com.nickyluis.nplay_ijkplayer.utlis.MediaUtils;
 
 import java.io.File;
 import java.util.ArrayList;
