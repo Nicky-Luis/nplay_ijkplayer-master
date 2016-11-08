@@ -1,4 +1,4 @@
-package com.dou361.jjdxm_ijkplayer;
+package com.nickyluis.nplay_ijkplayer;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
