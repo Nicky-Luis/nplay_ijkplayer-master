@@ -1,4 +1,4 @@
-package com.dou361.jjdxm_ijkplayer.utlis;
+package com.nickyluis.nplay_ijkplayer.utlis;
 
 import android.annotation.TargetApi;
 import android.content.Context;

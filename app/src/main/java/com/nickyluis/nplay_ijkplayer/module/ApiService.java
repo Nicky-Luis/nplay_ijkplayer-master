@@ -1,17 +1,16 @@
-package com.dou361.jjdxm_ijkplayer.module;
+package com.nickyluis.nplay_ijkplayer.module;
 
 
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
-import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 
 /**
  * ========================================
  * <p/>
- * 版 权：dou361.com 版权所有 （C） 2015
+ * 版 权：nickyluis.com 版权所有 （C） 2015
  * <p/>
  * 作 者：陈冠明
  * <p/>

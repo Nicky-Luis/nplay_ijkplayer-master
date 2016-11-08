@@ -1,14 +1,9 @@
-package com.dou361.jjdxm_ijkplayer;
+package com.nickyluis.nplay_ijkplayer;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
-import com.dou361.jjdxm_ijkplayer.bean.LiveBean;
-import com.dou361.jjdxm_ijkplayer.module.ApiServiceUtils;
-
-import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;

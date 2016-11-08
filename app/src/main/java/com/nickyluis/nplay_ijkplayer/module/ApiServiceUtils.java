@@ -1,7 +1,7 @@
-package com.dou361.jjdxm_ijkplayer.module;
+package com.nickyluis.nplay_ijkplayer.module;
 
 import com.alibaba.fastjson.JSON;
-import com.dou361.jjdxm_ijkplayer.bean.LiveBean;
+import com.nickyluis.nplay_ijkplayer.bean.LiveBean;
 
 import org.json.JSONObject;
 
@@ -19,7 +19,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 /**
  * ========================================
  * <p/>
- * 版 权：dou361.com 版权所有 （C） 2015
+ * 版 权：nickyluis.com 版权所有 （C） 2015
  * <p/>
  * 作 者：陈冠明
  * <p/>
