@@ -5,7 +5,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.dou361.jjdxm_ijkplayer"
+        applicationId "com.nickyluis.nplay_ijkplayer"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
@@ -44,6 +44,7 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
     compile 'com.squareup.okhttp3:okhttp:3.0.1'
     compile 'com.alibaba:fastjson:1.2.14'
+    compile files('libs/leakcanary.jar')
 
     compile project(':jjdxm-ijkplayer')
 }
