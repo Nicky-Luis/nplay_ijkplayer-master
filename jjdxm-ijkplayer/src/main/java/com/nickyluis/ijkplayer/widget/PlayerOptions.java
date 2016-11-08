@@ -1,4 +1,4 @@
-package com.dou361.ijkplayer.widget;
+package com.nickyluis.ijkplayer.widget;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,9 +27,7 @@ public class PlayerOptions {
         try {
             return this.getInteger(name);
         } catch (NullPointerException var4) {
-            ;
         } catch (ClassCastException var5) {
-            ;
         }
 
         return defaultValue;

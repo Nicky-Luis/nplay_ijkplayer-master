@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
 
-    <com.dou361.ijkplayer.widget.IjkVideoView
+    <com.nickyluis.ijkplayer.widget.IjkVideoView
         android:id="@+id/video_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

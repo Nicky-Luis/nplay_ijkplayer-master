@@ -1,4 +1,4 @@
-package com.dou361.ijkplayer.widget;
+package com.nickyluis.ijkplayer.widget;
 
 import android.app.Activity;
 import android.content.Context;
@@ -26,13 +26,13 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.dou361.ijkplayer.adapter.StreamSelectAdapter;
-import com.dou361.ijkplayer.bean.VideoijkBean;
-import com.dou361.ijkplayer.listener.OnControlPanelVisibilityChangeListener;
-import com.dou361.ijkplayer.listener.OnPlayerBackListener;
-import com.dou361.ijkplayer.listener.OnShowThumbnailListener;
-import com.dou361.ijkplayer.utils.NetworkUtils;
-import com.dou361.ijkplayer.utils.ResourceUtils;
+import com.nickyluis.ijkplayer.adapter.StreamSelectAdapter;
+import com.nickyluis.ijkplayer.bean.VideoijkBean;
+import com.nickyluis.ijkplayer.listener.OnControlPanelVisibilityChangeListener;
+import com.nickyluis.ijkplayer.listener.OnPlayerBackListener;
+import com.nickyluis.ijkplayer.listener.OnShowThumbnailListener;
+import com.nickyluis.ijkplayer.utils.NetworkUtils;
+import com.nickyluis.ijkplayer.utils.ResourceUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +43,7 @@ import tv.danmaku.ijk.media.player.IjkMediaPlayer;
 /**
  * ========================================
  * <p>
- * 版 权：dou361.com 版权所有 （C） 2015
+ * 版 权：nickyluis.com 版权所有 （C） 2015
  * <p>
  * 作 者：陈冠明
  * <p>
@@ -677,7 +677,7 @@ public class PlayerView {
             @Override
             public boolean onInfo(IMediaPlayer mp, int what, int extra) {
                 if (what == PlayStateParams.MEDIA_INFO_NETWORK_BANDWIDTH || what == PlayStateParams.MEDIA_INFO_BUFFERING_BYTES_UPDATE) {
-                    Log.e("dou361", "====extra=======" + extra);
+                    Log.e("nickyluis", "====extra=======" + extra);
                     if (tv_speed != null) {
                         tv_speed.setText(getFormatSize(extra));
                     }
@@ -1008,7 +1008,7 @@ public class PlayerView {
         } else {
             if (isHasSwitchStream || status == PlayStateParams.STATE_ERROR) {
                 //换源之后声音可播，画面卡住，主要是渲染问题，目前只是提供了软解方式，后期提供设置方式
-                videoView.setRender(videoView.RENDER_TEXTURE_VIEW);
+                videoView.setRender(IjkVideoView.RENDER_TEXTURE_VIEW);
                 videoView.setVideoPath(currentUrl);
                 videoView.seekTo(currentPosition);
                 isHasSwitchStream = false;
@@ -1161,14 +1161,10 @@ public class PlayerView {
      * 当前播放的是否是直播
      */
     public boolean isLive() {
-        if (currentUrl != null
+        isLive = currentUrl != null
                 && (currentUrl.startsWith("rtmp://")
                 || (currentUrl.startsWith("http://") && currentUrl.endsWith(".m3u8"))
-                || (currentUrl.startsWith("http://") && currentUrl.endsWith(".flv")))) {
-            isLive = true;
-        } else {
-            isLive = false;
-        }
+                || (currentUrl.startsWith("http://") && currentUrl.endsWith(".flv")));
         return isLive;
     }
 

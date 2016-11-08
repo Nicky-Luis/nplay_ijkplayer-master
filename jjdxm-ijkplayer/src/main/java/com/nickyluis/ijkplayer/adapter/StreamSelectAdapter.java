@@ -1,4 +1,4 @@
-package com.dou361.ijkplayer.adapter;
+package com.nickyluis.ijkplayer.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,15 +7,15 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.dou361.ijkplayer.bean.VideoijkBean;
-import com.dou361.ijkplayer.utils.ResourceUtils;
+import com.nickyluis.ijkplayer.bean.VideoijkBean;
+import com.nickyluis.ijkplayer.utils.ResourceUtils;
 
 import java.util.List;
 
 /**
  * ========================================
  * <p>
- * 版 权：dou361.com 版权所有 （C） 2015
+ * 版 权：nickyluis.com 版权所有 （C） 2015
  * <p>
  * 作 者：陈冠明
  * <p>
@@ -68,7 +68,7 @@ public class StreamSelectAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = this.layoutInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "simple_player_list_item"), (ViewGroup) null);
+            convertView = this.layoutInflater.inflate(ResourceUtils.getResourceIdByName(mContext, "layout", "simple_player_list_item"), null);
             holder = new ViewHolder();
             holder.streamName = (TextView) convertView.findViewById(ResourceUtils.getResourceIdByName(mContext, "id", "simple_player_stream_name"));
             convertView.setTag(holder);

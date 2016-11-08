@@ -1,4 +1,4 @@
-package com.dou361.ijkplayer.utils;
+package com.nickyluis.ijkplayer.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -63,15 +63,15 @@ public class ResourceUtils {
                     id = desireClass.getField(name).getInt(desireClass);
                 }
             } catch (ClassNotFoundException var7) {
-                Log.d("dou361", "ClassNotFoundException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "ClassNotFoundException: class=" + className + " fieldname=" + name);
             } catch (IllegalArgumentException var8) {
-                Log.d("dou361", "IllegalArgumentException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "IllegalArgumentException: class=" + className + " fieldname=" + name);
             } catch (SecurityException var9) {
-                Log.d("dou361", "SecurityException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "SecurityException: class=" + className + " fieldname=" + name);
             } catch (IllegalAccessException var101) {
-                Log.d("dou361", "IllegalAccessException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "IllegalAccessException: class=" + className + " fieldname=" + name);
             } catch (NoSuchFieldException var11) {
-                Log.d("dou361", "NoSuchFieldException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "NoSuchFieldException: class=" + className + " fieldname=" + name);
             }
 
             return id;
@@ -104,15 +104,15 @@ public class ResourceUtils {
                     typedArray = context.obtainStyledAttributes(attrs, ids);
                 }
             } catch (ClassNotFoundException var7) {
-                Log.d("dou361", "ClassNotFoundException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "ClassNotFoundException: class=" + className + " fieldname=" + name);
             } catch (IllegalArgumentException var8) {
-                Log.d("dou361", "IllegalArgumentException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "IllegalArgumentException: class=" + className + " fieldname=" + name);
             } catch (SecurityException var9) {
-                Log.d("dou361", "SecurityException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "SecurityException: class=" + className + " fieldname=" + name);
             } catch (IllegalAccessException var101) {
-                Log.d("dou361", "IllegalAccessException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "IllegalAccessException: class=" + className + " fieldname=" + name);
             } catch (NoSuchFieldException var11) {
-                Log.d("dou361", "NoSuchFieldException: class=" + className + " fieldname=" + name);
+                Log.d("nickyluis", "NoSuchFieldException: class=" + className + " fieldname=" + name);
             }
 
             return typedArray;

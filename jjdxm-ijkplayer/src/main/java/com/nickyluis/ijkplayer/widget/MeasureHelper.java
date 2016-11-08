@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dou361.ijkplayer.widget;
+package com.nickyluis.ijkplayer.widget;
 
 import android.view.View;
 

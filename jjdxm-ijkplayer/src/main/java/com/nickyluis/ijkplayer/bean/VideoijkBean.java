@@ -1,9 +1,9 @@
-package com.dou361.ijkplayer.bean;
+package com.nickyluis.ijkplayer.bean;
 
 /**
  * ========================================
  * <p>
- * 版 权：dou361.com 版权所有 （C） 2015
+ * 版 权：nickyluis.com 版权所有 （C） 2015
  * <p>
  * 作 者：陈冠明
  * <p>

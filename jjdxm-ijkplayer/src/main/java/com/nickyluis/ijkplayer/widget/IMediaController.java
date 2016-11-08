@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dou361.ijkplayer.widget;
+package com.nickyluis.ijkplayer.widget;
 
 import android.view.View;
 import android.widget.MediaController;
@@ -22,7 +22,7 @@ import android.widget.MediaController;
 /**
  * ========================================
  * <p/>
- * 版 权：dou361.com 版权所有 （C） 2015
+ * 版 权：nickyluis.com 版权所有 （C） 2015
  * <p/>
  * 作 者：陈冠明
  * <p/>

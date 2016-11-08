@@ -6,15 +6,15 @@ ext {
     jjdxm_bintrayName = 'jjdxm-ijkplayer'
 
     jjdxm_packaging = 'aar'
-    jjdxm_groupId = 'com.dou361.ijkplayer'
+    jjdxm_groupId = 'com.nickyluis.ijkplayer'
     jjdxm_artifactId = 'jjdxm-ijkplayer'
 
     jjdxm_libraryVersion = '1.0.6'
     jjdxm_libraryName = 'jjdxm-ijkplayer'
     jjdxm_libraryDescription = 'this is a ijkplayer library of the application'
 
-    jjdxm_siteUrl = 'https://github.com/jjdxmashl/jjdxm_ijkplayer'
-    jjdxm_gitUrl = 'https://github.com/jjdxmashl/jjdxm_ijkplayer.git'
+    jjdxm_siteUrl = 'https://github.com/jjdxmashl/nplay_ijkplayer'
+    jjdxm_gitUrl = 'https://github.com/jjdxmashl/nplay_ijkplayer.git'
 
     jjdxm_developerId = 'jjdxmashl'
     jjdxm_developerName = 'jjdxmashl'
