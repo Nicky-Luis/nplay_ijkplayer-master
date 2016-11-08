@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.dou361.jjdxm_ijkplayer.MainActivity">
+    tools:context="com.nickyluis.nplay_ijkplayer.MainActivity">
 
     <include
         layout="@layout/simple_player_view_player"
