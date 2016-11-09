@@ -16,16 +16,18 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
-import com.nicky.luis.common.app.CommonApp;
-import com.nicky.luis.common.manager.ActivityManager;
-import com.nicky.luis.common.widget.CustomConfirmDialog;
+import com.nickyluis.nplay_ijkplayer.common.app.CommonApp;
+import com.nickyluis.nplay_ijkplayer.common.manager.ActivityManager;
+import com.nickyluis.nplay_ijkplayer.common.widget.CustomConfirmDialog;
 import com.squareup.leakcanary.RefWatcher;
 import com.zhy.http.okhttp.OkHttpUtils;
 
 import butterknife.ButterKnife;
 
 public abstract class BaseActivity extends FragmentActivity implements IBaseView {
+    //加载框
     private ProgressDialog mProgressDialog;
+    //fragment管理
     FragmentManager fragmentManager;
 
 
@@ -47,10 +49,10 @@ public abstract class BaseActivity extends FragmentActivity implements IBaseView
             v = LayoutInflater.from(this).inflate(setLayoutId(), null);
             setContentView(v);
             //检测是否有内存泄露
-            RefWatcher refWatcher = CommonApp.getInstance().getRefWatcher(this);
+            RefWatcher refWatcher = CommonApp.getRefWatcher(this);
             refWatcher.watch(this);
             // 初始化View注入
-            ButterKnife.inject(this);
+            ButterKnife.bind(this);
             loadLayout(v);
         }
         initPresenter();
@@ -63,8 +65,11 @@ public abstract class BaseActivity extends FragmentActivity implements IBaseView
      * @return
      */
     public abstract int setLayoutId();
+
     protected abstract void loadLayout(View v);
+
     protected abstract void setUpView();
+
     public abstract void initPresenter();
 
     @Override
@@ -174,6 +179,7 @@ public abstract class BaseActivity extends FragmentActivity implements IBaseView
     }
 
     //--------------------------Fragment相关--------------------------//
+
     /**
      * 获取Fragment管理器
      *

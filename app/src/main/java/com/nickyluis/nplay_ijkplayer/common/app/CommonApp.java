@@ -17,6 +17,7 @@ import java.util.Locale;
  * @author Ht
  */
 public class CommonApp extends Application {
+    //
     private static CommonApp mInstance;
     //检测内存泄露
     private RefWatcher refWatcher;
@@ -33,14 +34,23 @@ public class CommonApp extends Application {
      */
     public static float screenDensity;
 
+    public CommonApp() {
+    }
+
+    // 单例模式获取唯一的MyApplication实例
+    public static CommonApp getInstance() {
+        if (null == mInstance) {
+            mInstance = new CommonApp();
+        }
+        return mInstance;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
-
-        //检测内存泄露
-        LeakCanary.install(this);
         mInstance = this;
-
+        //检测内存泄露
+        refWatcher = LeakCanary.install(this);
         initScreenSize();
     }
 
@@ -49,11 +59,6 @@ public class CommonApp extends Application {
      */
     public static RefWatcher getRefWatcher(Context context) {
         return mInstance.refWatcher;
-    }
-
-    //获取实例
-    public static CommonApp getInstance() {
-        return mInstance;
     }
 
     /**

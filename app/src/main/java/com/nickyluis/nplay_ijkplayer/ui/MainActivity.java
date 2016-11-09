@@ -1,20 +1,33 @@
-package com.nickyluis.nplay_ijkplayer;
+package com.nickyluis.nplay_ijkplayer.ui;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import butterknife.ButterKnife;
+import com.nickyluis.nplay_ijkplayer.R;
+import com.nickyluis.nplay_ijkplayer.common.base.BaseActivity;
+
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+    public int setLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void loadLayout(View v) {
+
+    }
+
+    @Override
+    protected void setUpView() {
+
+    }
+
+    @Override
+    public void initPresenter() {
+
     }
 
     @OnClick({R.id.btn_h, R.id.btn_v, R.id.btn_live, R.id.btn_origin})

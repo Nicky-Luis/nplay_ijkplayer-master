@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#0099cc"
+             tools:context="com.nickyluis.nplay_ijkplayer.SplashActivity">
+
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <item android:drawable="@color/cl_default"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+        <item android:drawable="@mipmap/ic_launcher"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+    </layer-list>
+
+</FrameLayout>

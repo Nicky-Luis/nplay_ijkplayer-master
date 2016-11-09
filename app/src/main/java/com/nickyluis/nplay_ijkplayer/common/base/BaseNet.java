@@ -17,6 +17,7 @@ import java.util.Map;
 
 /**
  * Created by Nicky on 2016/5/14.
+ * @brife
  */
 public class BaseNet {
     private static final String TAG = "BaseNet";
@@ -27,8 +28,7 @@ public class BaseNet {
      * post请求
      */
     public void postRequest(Activity tag, String url, Gson gson, StringCallback callBack) {
-        OkHttpUtils
-                .postString()
+        OkHttpUtils.postString()
                 .url(url)
                 .content(gson.toString())
                 .tag(tag)

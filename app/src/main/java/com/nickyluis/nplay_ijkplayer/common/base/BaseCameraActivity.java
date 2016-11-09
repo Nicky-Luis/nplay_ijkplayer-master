@@ -12,8 +12,8 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 
-import com.nicky.luis.common.utils.CommonUtils;
-import com.nicky.luis.common.utils.SdCardUtil;
+import com.nickyluis.nplay_ijkplayer.common.utils.CommonUtils;
+import com.nickyluis.nplay_ijkplayer.common.utils.SdCardUtil;
 
 import java.io.File;
 

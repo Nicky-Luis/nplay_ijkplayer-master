@@ -15,8 +15,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
-import com.nicky.luis.common.app.CommonApp;
-import com.nicky.luis.module.R;
+import com.nickyluis.nplay_ijkplayer.R;
+import com.nickyluis.nplay_ijkplayer.common.app.CommonApp;
 
 import java.security.MessageDigest;
 import java.text.ParseException;

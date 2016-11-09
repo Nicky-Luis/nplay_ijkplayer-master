@@ -2,7 +2,7 @@ package com.nickyluis.nplay_ijkplayer.common.app;
 
 import android.annotation.SuppressLint;
 
-import com.nicky.luis.common.utils.SdCardUtil;
+import com.nickyluis.nplay_ijkplayer.common.utils.SdCardUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

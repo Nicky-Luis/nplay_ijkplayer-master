@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nicky.luis.common.app.CommonApp;
+import com.nickyluis.nplay_ijkplayer.common.app.CommonApp;
 import com.squareup.leakcanary.RefWatcher;
 
 import butterknife.ButterKnife;
@@ -69,10 +69,10 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
             if (rootView == null) {
                 rootView = inflater.inflate(viewId, null);
                 //检测是否有内存泄露
-                RefWatcher refWatcher = CommonApp.getInstance().getRefWatcher(getActivity());
+                RefWatcher refWatcher = CommonApp.getRefWatcher(getActivity());
                 refWatcher.watch(this);
                 //view注入
-                ButterKnife.inject(this, rootView);
+                ButterKnife.bind(this, rootView);
 
                 loadLayout(rootView);
                 setUpViews(rootView);

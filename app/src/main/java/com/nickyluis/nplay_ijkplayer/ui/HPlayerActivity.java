@@ -1,4 +1,4 @@
-package com.nickyluis.nplay_ijkplayer;
+package com.nickyluis.nplay_ijkplayer.ui;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
@@ -17,6 +17,7 @@ import com.nickyluis.ijkplayer.bean.VideoijkBean;
 import com.nickyluis.ijkplayer.listener.OnShowThumbnailListener;
 import com.nickyluis.ijkplayer.widget.PlayStateParams;
 import com.nickyluis.ijkplayer.widget.PlayerView;
+import com.nickyluis.nplay_ijkplayer.R;
 import com.nickyluis.nplay_ijkplayer.utlis.MediaUtils;
 
 import java.io.File;

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.view.WindowManager;
 
-import com.nicky.luis.common.app.CommonApp;
+import com.nickyluis.nplay_ijkplayer.common.app.CommonApp;
 
 
 /**
