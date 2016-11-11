@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    package="com.nickyluis.nplay_ijkplayer"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest package="com.nickyluis.nplay_ijkplayer"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
@@ -10,30 +9,26 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
     <application
-        android:name="com.nickyluis.nplay_ijkplayer.common.app.CommonApp"
+        android:name=".basic.app.CommonApp"
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <service
             android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
             android:enabled="false"
             android:process=":leakcanary"/>
-
         <service
             android:name="com.squareup.leakcanary.DisplayLeakService"
             android:enabled="false"/>
 
         <activity
             android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
-            android:taskAffinity="com.squareup.leakcanary" />
-
+            android:taskAffinity="com.squareup.leakcanary"/>
         <activity
             android:name=".SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_splash"
             android:theme="@style/StartStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -41,13 +36,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.SelectActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
-
         <activity
             android:name=".ui.PlayerLiveActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -65,6 +58,11 @@
             android:name=".ui.PlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

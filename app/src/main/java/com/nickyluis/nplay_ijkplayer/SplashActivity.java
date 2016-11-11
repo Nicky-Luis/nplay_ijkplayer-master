@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 
-import com.nickyluis.nplay_ijkplayer.ui.MainActivity;
-
 /**
  * this is splash activity
  */
