@@ -5,7 +5,7 @@ import android.databinding.ViewDataBinding;
 import android.view.View;
 
 import com.nickyluis.nplayer.R;
-import com.nickyluis.nplayer.basic.base.BaseActivity;
+import com.nickyluis.basic.base.BaseActivity;
 
 import butterknife.OnClick;
 

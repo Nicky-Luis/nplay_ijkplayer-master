@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.nickyluis.nplayer.databinding.FragmentBlankBinding;
 import com.nickyluis.nplayer.R;
-import com.nickyluis.nplayer.basic.base.BaseFragment;
+import com.nickyluis.basic.base.BaseFragment;
 
 
 public class BlankFragment extends BaseFragment {

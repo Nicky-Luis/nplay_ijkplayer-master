@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
     <application
-        android:name="com.nickyluis.nplayer.basic.app.CommonApp"
+        android:name="com.nickyluis.basic.app.CommonApp"
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"

@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.nickyluis.nplayer.adapter.MyFragmentPagerAdapter;
-import com.nickyluis.nplayer.basic.base.BaseActivityWithToolBar;
+import com.nickyluis.basic.base.BaseActivityWithToolBar;
 import com.nickyluis.nplayer.databinding.ActivityMainBinding;
 
 public class MainActivity extends BaseActivityWithToolBar {
