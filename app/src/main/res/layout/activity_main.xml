@@ -7,33 +7,36 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--toolbar-->
+        <include layout="@layout/toolbar"/>
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/royalblue"
-            android:minHeight="50dp"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-            <!--自定义控件-->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Clock" />
-        </android.support.v7.widget.Toolbar>
+            android:layout_height="match_parent">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tablayout"
-            android:layout_width="match_parent"
-            app:tabMode="scrollable"
-            android:layout_height="wrap_content"/>
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/mainTabs"
+                    android:background="@color/colorPrimary"
+                    style="@style/MyCustomTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="scrollable"/>
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/mainTabVp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/mainViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <!-- 侧滑菜单内容 -->
+            <include layout="@layout/slidmenu_drawerlayout"/>
+
+        </android.support.v4.widget.DrawerLayout>
     </LinearLayout>
 </layout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.nickyluis.nplay_ijkplayer"
+<manifest package="com.nickyluis.nplayer"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
     <application
-        android:name=".basic.app.CommonApp"
+        android:name="com.nickyluis.nplayer.basic.app.CommonApp"
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
@@ -27,7 +27,7 @@
             android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
             android:taskAffinity="com.squareup.leakcanary"/>
         <activity
-            android:name=".SplashActivity"
+            android:name="com.nickyluis.nplayer.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/StartStyle">
             <intent-filter>
@@ -37,29 +37,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.SelectActivity"
+            android:name="com.nickyluis.nplayer.ui.SelectActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".ui.PlayerLiveActivity"
+            android:name="com.nickyluis.nplayer.ui.PlayerLiveActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".ui.HPlayerActivity"
+            android:name="com.nickyluis.nplayer.ui.HPlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".ui.OriginPlayerActivity"
+            android:name="com.nickyluis.nplayer.ui.OriginPlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".ui.PlayerActivity"
+            android:name="com.nickyluis.nplayer.ui.PlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".MainActivity"
+            android:name="com.nickyluis.nplayer.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

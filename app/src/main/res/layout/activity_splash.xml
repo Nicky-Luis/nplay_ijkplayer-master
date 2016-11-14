@@ -3,7 +3,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:background="#0099cc"
-             tools:context="com.nickyluis.nplay_ijkplayer.SplashActivity">
+             tools:context="com.nickyluis.nplayer.SplashActivity">
 
     <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
