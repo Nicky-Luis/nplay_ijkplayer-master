@@ -13,8 +13,8 @@ ext {
     jjdxm_libraryName = 'jjdxm-ijkplayer'
     jjdxm_libraryDescription = 'this is a ijkplayer library of the application'
 
-    jjdxm_siteUrl = 'https://github.com/jjdxmashl/nplay_ijkplayer'
-    jjdxm_gitUrl = 'https://github.com/jjdxmashl/nplay_ijkplayer.git'
+    jjdxm_siteUrl = 'https://github.com/jjdxmashl/nplayer'
+    jjdxm_gitUrl = 'https://github.com/jjdxmashl/nplayer.git'
 
     jjdxm_developerId = 'jjdxmashl'
     jjdxm_developerName = 'jjdxmashl'
